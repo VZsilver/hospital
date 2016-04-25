@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>医生主页</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/doctor.css">
+    <link rel="stylesheet" href="css/model.css">
+</head>
+<body>
+<!--<script type="text/javascript">
+    (function(){
+        var ind = 2; //初始位置
+        var nav= jQuery(".nav");
+        var init = jQuery(".nav .m").eq(ind);
+        var block = jQuery(".nav .block"); //滑块
+        block.css({"left":init.position().left-3}); //初始化滑块位置
+        nav.hover(function(){},function(){ block.animate({"left":init.position().left-3},100); }); //移出导航滑块返回
+        jQuery(".nav").slide({
+            type:"menu", //效果类型
+            titCell:".m", // 鼠标触发对象
+            targetCell:".sub", // 效果对象，必须被titCell包含
+            delayTime:300, // 效果时间
+            triggerTime:0, //鼠标延迟触发时间
+            returnDefault:true,//on返回初始位置
+            defaultIndex:ind,//初始位置
+            startFun:function(i,c,s,tit){ //控制当前滑块位置
+                block.animate({"left":tit.eq(i).position().left-3},100);
+            }
+        });
+    })()
+</script>-->
+<header class="container">
+    <h1 class="tit">xxhospital</h1>
+    <ul id="menu2">
+
+        <li><a href="#">医患调节</a>
+            <ul>
+                <li><a href="#">医患调节</a></li>
+                <li><a href="#">医患调节</a></li>
+                <li><a href="#">医患调节</a></li>
+            </ul>
+        </li>
+        <li><a href="#">评价医生</a>
+            <ul>
+                <li><a href="#">评价医生</a></li>
+                <li><a href="#">评价医生</a></li>
+                <li><a href="#">评价医生</a></li>
+            </ul>
+        </li>
+        <li><a href="#">在线咨询</a>
+            <ul>
+                <li><a href="#">在线咨询</a></li>
+                <li><a href="#">在线咨询</a></li>
+                <li><a href="#">在线咨询</a></li>
+            </ul>
+        </li>
+        <li><a href="#">挂号预约</a>
+            <ul>
+                <li><a href="#">挂号预约</a></li>
+                <li><a href="#">挂号预约</a></li>
+                <li><a href="#">挂号预约</a></li>
+            </ul>
+        </li>
+        <li><a href="home.html">医院首页</a></li>
+    </ul>
+</header><script>
+    $("#menu2").menu({position: {at: "left bottom"}});
+</script>
+
+    <img src="img/f.jpg">
+
+
+<div class="container">
+    <div class="wrapksl">
+        <div class="sideNav">
+            <h1>医生主页</h1>
+            <ul>
+                <li><a title="个人资料"  id="content1" style="cursor:pointer;">个人资料</a></li>
+                <li><a title="综合得分"  id="content2" style="cursor:pointer;">综合得分</a></li>
+                <li><a title="人气值"  id="content3" style="cursor:pointer;">人气值</a></li>
+                <li><a title="已预约号"  id="content4" style="cursor:pointer;">已预约号</a></li>
+                <li><a title="在线答疑"  id="content5" style="cursor:pointer;">在线答疑</a></li>
+                <li><a title="我的精帖" id="content6" style="cursor:pointer;">我的精帖</a></li>
+                <li><a title="我的荣誉" id="content7" style="cursor:pointer;">我的荣誉</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrapksr">
+        <div class="Department">
+            <div style="display:block" class="content1">
+                <h1>个人资料</h1>
+                <div class="list">
+                    <form class="form-horizontal" role="form"  action="" method="post">
+
+                        <div class="form-group ">
+                            <label class="control-label  ">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+                            <input  type="text"   name="name" value="">
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label  ">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+                            <input  type="text"   name="sex" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">民&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;族</label>
+                            <input  type="text"  name="nation" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">出生日期</label>
+                            <input  type="text"   name="birth" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">身份证号</label>
+                            <input  type="text"  name="num" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">联系电话</label>
+                            <input  type="text"  name="tel" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">电子邮箱</label>
+                            <input  type="text" name="email" value="">
+                        </div>
+                    </form>
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+            <div style="display:none" class="content2">
+                <h1>综合得分</h1>
+                <div class="list">
+                    <form class="form-horizontal" role="form"  action="" method="post">
+                        <div class="form-group ">
+                            <label class="control-label  ">年度综合得分</label>
+                        </div>
+                        <div class="form-group ">
+                            <label class="control-label  ">月度综合得分</label>
+                        </div>
+                    </form>
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+            <div style="display:none" class="content3">
+                <h1>人气值</h1>
+                <div class="list">
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+            <div style="display:none" class="content4">
+                <h1>已预约号</h1>
+                <div class="list">
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+            <div style="display:none" class="content5">
+                <h1>在线答疑</h1>
+                <div class="list">
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+            <div style="display:none" class="content6">
+                <h1>我的精帖</h1>
+                <div class="list">
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+
+            <div style="display:none" class="content7">
+                <h1>我的荣誉</h1>
+                <div class="list">
+                    <span class="clear_f"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type=text/javascript>
+    //window.location.reload();
+    r = window.location.href.split('#');
+    if (r[1] != null){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content"+r[1]).slideToggle(300);
+    }
+    $("#content1").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content1").slideToggle(300);
+    });
+    $("#content2").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content2").slideToggle(300);
+    });
+    $("#content3").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content3").slideToggle(300);
+    });
+    $("#content4").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content4").slideToggle(300);
+    });
+    $("#content5").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content5").slideToggle(300);
+    });
+    $("#content6").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content6").slideToggle(300);
+    });
+    $("#content7").click(function(){
+        for(var i=1; i<=9; i++){
+            $(".content"+i).slideUp("slow");
+        }
+        $(".content7").slideToggle(300);
+    });
+
+</script>
+<footer>
+    <p>医院地址：
+        湖北师范学院教育大楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱地址：940388651@qq.com</p>
+    <p>网址：www.hktry.com</p>
+    <p>版权所有：Jplus实验室</p>
+    <p><span>2015 © Copyright Jplus实验室官方.</span>
+        <a class="link" href="#">医院后台</a> | <a  class="link" href="#">卫生局后台</a>
+    </p>
+</footer>
+</body>
+</html>

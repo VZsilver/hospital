@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    border-top: 5px solid #13A1E1;
+    overflow-x: hidden;
+}
+header{
+    margin-top:10px;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.tit{
+    /*color: #00522e;*/
+    color: #1c85c9;
+    font-weight: bolder;
+    float: left;
+    font-size: 50px;
+    margin-top: -8px;
+
+}
+.tit-r{
+    padding-top: 8px;
+    margin-left: 5px;
+}
+#menu2.ui-menu:after{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.ui-widget-content {
+    /* border: 1px solid #00522e;
+     border-top: 5px solid #00522e;*/
+    border: 1px solid #1c85c9;
+    border-top: 5px solid #1c85c9;
+    background: rgba(255,255,255,0.5);
+    color: #444;
+}
+#menu2.ui-widget-content {
+    border:0 ;
+    /*border-bottom: 5px solid #00522e;*/
+    background: rgba(255,255,255,0.5);
+    color: #444;
+
+}
+#menu2.ui-menu{
+    font-size: 25px;
+}
+#menu2.ui-menu .ui-menu-item{
+    display: inline-block;
+    float: right;
+    margin: 2px;
+    padding: 5px;
+    width: 130px;
+}
+#menu2 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #444;
+}
+#menu2 a:hover{
+    /*color: #1b6d3f;*/
+    color: #1c85c9;
+}
+.ui-menu .ui-state-focus, .ui-menu .ui-state-active {
+
+    font-size: 25px;
+    border: 0px solid #00522e;
+    background: rgba(255,255,255,0.5);
+    font-weight: normal;
+
+}
+
+.ui-menu-item .ui-state-focus, .ui-menu-item .ui-state-active {
+    /*color: #1b6d3f;*/
+    color: #1c85c9;
+    font-size: 25px;
+    border:  0px solid #00522e;
+    background: rgba(255,255,255,0.5);
+    font-weight: normal;
+
+}
+.green{
+    /*color: #00522e;*/
+    color: #1c85c9;
+}
+footer{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    background:#1c85c9;;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+.link a:hover{
+    color: #000;
+}

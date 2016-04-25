@@ -1,0 +1,87 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.wrapksl {
+    width: 230px;
+    float: left;
+    padding-right: 10px;
+    margin-left: 120px;
+}
+
+.sideNav {
+    margin-bottom: 30px;
+    background: #f4f4f4;
+}
+
+.sideNav h1 {
+    font-size: 20px;
+    height: 45px;
+    line-height: 43px;
+   text-align: center;
+    padding-top: 3px;
+    overflow: hidden;
+    background: #1c85c9;
+    color: #FFF;
+    margin-bottom: 0px;
+
+}
+
+.sideNav a {
+    display: block;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    overflow: hidden;
+    border-top: #e6e6e6 solid 1px;
+    font-size: 18px;
+    color: #0047b9;
+    background: url(../img/li.png) 20px center no-repeat;
+}
+
+.sideNav a:hover {
+    background: #1c85c9;
+    color: #FFF;
+    position: relative;
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+.wrapksr {
+    width: 600px;
+    float: left;
+}
+.Department h1 {
+    height: 45px;
+    line-height: 35px;
+    overflow: hidden;
+    background: #1c85c9;
+    color: #FFF;
+    font-size: 18px;
+    padding-left: 18px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.Department .list {
+    padding: 5px 10px 10px 50px;
+}
+
+/*.Department li{float:left; width:160px; height:74px;  overflow:hidden;*//*line-height:74px;background:url(statics/images/thimages/images/menubg1.gif) left center no-repeat;*//* }
+.Department li a{padding-left:10px; font-size:15px;}
+.Department li a:hover{color:#5088b7;}*/
+.clear_f {
+    clear: both;
+    height: 27px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    _display: inherit;
+}
+.form-group {
+    margin: 10px;
+    font-size: 18px;
+}

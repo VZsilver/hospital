@@ -1,0 +1,243 @@
+    <!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>医院首页</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/model.css">
+
+</head>
+<body>
+<header class="container">
+    <h1 class="tit">xxhospital</h1>
+    <ul id="menu2">
+        <li><a href="#">医患调节</a>
+            <ul>
+                <li><a href="#">医患调节</a></li>
+                <li><a href="#">医患调节</a></li>
+                <li><a href="#">医患调节</a></li>
+            </ul>
+        </li>
+        <li><a href="#">评价医生</a>
+            <ul>
+                <li><a href="#">评价医生</a></li>
+                <li><a href="#">评价医生</a></li>
+                <li><a href="#">评价医生</a></li>
+            </ul>
+        </li>
+        <li><a href="#">在线咨询</a>
+            <ul>
+                <li><a href="#">在线咨询</a></li>
+                <li><a href="#">在线咨询</a></li>
+                <li><a href="#">在线咨询</a></li>
+            </ul>
+        </li>
+        <li><a href="#">挂号预约</a>
+            <ul>
+                <li><a href="#">挂号预约</a></li>
+                <li><a href="#">挂号预约</a></li>
+                <li><a href="#">挂号预约</a></li>
+            </ul>
+        </li>
+        <li><a href="home.html">医院首页</a></li>
+    </ul>
+
+    <!-- -->
+</header>
+
+<script>
+    $("#menu2").menu({position: {at: "left bottom"}});
+</script>
+<!--header-->
+<div class="container" id="myCarousel">
+    <div id="carousel1" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-toggle="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-toggle="#carousel1" data-slide-to="1"></li>
+            <li data-toggle="#carousel1" data-slide-to="2"></li>
+            <li data-toggle="#carousel1" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/b1.jpg" style=" width: 1330px;height: 250px;">
+            </div>
+            <div class="item ">
+                <img src="img/b2.jpg" style=" width: 1330px;height: 250px;">
+            </div>
+            <div class="item">
+                <img src="img/b3.jpg" style=" width: 1330px;height: 250px;">
+            </div>
+            <div class="item">
+                <img src="img/b4.jpg" style=" width: 1330px;height: 250px;">
+
+                <!--<div class="carousel-caption">-->
+                    <!--<h2 class="green">Fourth slide label</h2>-->
+
+                    <!--<p class="green">About the description of the picture</p>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel1" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel1" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    <script>
+        $(".carousel").carousel({
+            interval: 2000   /*不能加分号*/
+        })
+    </script>
+    <!--图片轮播-->
+    <div id="news">
+        <div class="top">
+            <h1>医疗新闻</h1>
+            <a class="more" href="#">+更多</a>
+        </div>
+        <div class="box">
+            <div class="tempWrap" style="overflow: hidden;position: relative;height: 400px">
+                <ul style="top:0px;position: relative;padding: 0;margin: 0">
+                    <li style="height: 29px">
+                        <a href="#" target="_blank" title="">newsnewsnewsnewsnewsnewsnewsnews</a>
+                    </li>
+                    <li style="height: 29px">
+                        <a href="#" target="_blank" title="">newsnewsnewsnewsnewsnewsnewsnews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <script type="text/javascript">
+             $(".news").slide( { mainCell:".box ul",autoPage:true,effect:'top',autoPlay:true,scroll:1,vis:10,delayTime:800,mouseOverStop:true });
+         </script>-->
+
+    </div>
+
+    <div class="login">
+       <!--  <form >
+            <div class="input-group">
+                <input type="text" class=" form-control" name="search"  placeholder="请输入关键词">
+                <button   type="submit" class="btn btn-success" >搜索</button>
+            </div>
+            <div class="input-group">
+                <button class="btn btn-info" type="submit"><a href="login.html">登录</a></button>
+                <button class="btn btn-info" type="submit"><a href="#">注册</a></button>
+            </div>
+        </form> -->
+    </div>
+    <div id="popstar">
+        <div class="star">
+            <h1>人气之星</h1>
+        </div>
+        <div class="num">
+            <ul>
+                <li><h3>
+                    No.1 <a href="#"><span class="name"> 张三</span> <span
+                        class="grade"> 99.5分</span></a>
+                </h3></li>
+                <li><h4>
+                    No.2 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+                <li><h4>
+                    No.3 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+                <li><h4>
+                    No.4 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+                <li><h4>
+                    No.5 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+            </ul>
+                <a href="#" class="btn btn-info btn-sm more ">更多>></a>
+        </div>
+    </div>
+    <div id="zhengce">
+        <div class="top">
+            <h1>医疗政策</h1>
+            <a class="more" href="#">+更多</a>
+        </div>
+        <div class="box">
+            <div class="tempWrap" style="overflow: hidden;position: relative;height: 400px">
+                <ul style="top:0px;position: relative;padding: 0;margin: 0">
+                    <li style="height: 29px">
+                        <a href="#" target="_blank" title="">newsnewsnewsnewsnewsnewsnewsnews</a>
+                    </li>
+                    <li style="height: 29px">
+                        <a href="#" target="_blank" title="">newsnewsnewsnewsnewsnewsnewsnews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="huati">
+        <div class="top">
+            <h1>热点话题</h1>
+            <a class="more" href="#">+更多</a>
+        </div>
+        <div class="box">
+            <div class="tempWrap" style="overflow: hidden;position: relative;height: 400px">
+                <ul style="top:0px;position: relative;padding: 0;margin: 0">
+                    <li style="height: 29px">
+                        <a href="#" target="_blank" title="">newsnewsnewsnewsnewsnewsnewsnews</a>
+                    </li>
+                    <li style="height: 29px">
+                        <a href="#" target="_blank" title="">newsnewsnewsnewsnewsnewsnewsnews</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="huoyue">
+        <div class="star">
+            <h1>活跃之星</h1>
+        </div>
+        <div class="num">
+            <ul>
+                <li><h3>
+                    No.1 <a href="#"><span class="name"> 张三</span> <span
+                        class="grade"> 99.5分</span></a>
+                </h3></li>
+                <li><h4>
+                    No.2 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+                <li><h4>
+                    No.3 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+                <li><h4>
+                    No.4 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+                <li><h4>
+                    No.5 <a href="#"><span class="name"> 李四</span> <span
+                        class="grade"> 92分</span></a>
+                </h4></li>
+            </ul>
+            <a href="#" class="btn btn-info btn-sm more ">更多>></a>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>医院地址：
+        湖北师范学院教育大楼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱地址：940388651@qq.com</p>
+    <p>网址：www.hktry.com</p>
+    <p>版权所有：Jplus实验室</p>
+    <p><span>2015 © Copyright Jplus实验室官方.</span>
+        <a class="link" href="#">医院后台</a> | <a  class="link" href="#">卫生局后台</a>
+    </p>
+</footer>
+
+
+</body>
+</html>

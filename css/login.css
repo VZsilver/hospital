@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+.main-head{
+    height: 70px;
+}
+.tit{
+    color: #1c85c9;
+    font-weight: bolder;
+    float: left;
+    font-size: 50px;
+    margin-top: -8px;
+    padding-right: 20px;
+
+}
+.tit-r{
+    padding-top: 8px;
+}
+.head-right{
+    position: absolute;
+    left: 880px;
+    top: 30px;
+}
+.head-right a{
+    text-decoration: none;
+}
+.head-right a:hover{
+    color: #de0000;
+}
+.login img{
+    width: 1370px;
+    height: 460px;
+    background-size: cover;
+    opacity: 0.8;         /*IE9及以上, Firefox, Chrome, Opera 和 Safari*/
+    filter: alpha(opacity=80);   /*IE8及以下*/
+}
+
+.login .content{
+    position: absolute;
+    top: 52%;
+    left: 70%;
+    width: 380px;
+    height: 350px;
+    background: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    box-shadow: 0 0 8px rgba(70,107,133,0.5);
+    -webkit-box-shadow: 0 0 10px rgba(70,107,133,0.5);
+    -moz-box-shadow: 0 0 10px rgba(70,107,133,0.5);
+    margin-left: -235px;
+    margin-top: -200px;
+    padding: 25px;
+
+}
+
+.content .title{
+    display: block;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.content .title span{
+    font-size: 30px;
+}
+
+.input-group{
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+.remember{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.remember .btn{
+    margin-left:60px;
+    padding: 8px 20px;
+}
+
+.foot{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    position: fixed;
+    line-height: 18px;
+    text-align: center;
+    margin-top: -15px;
+    color: #626262;
+    font-size: 13px;
+}
